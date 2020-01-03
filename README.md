@@ -158,6 +158,13 @@ To use an external SMTP server, you have to provide the connection details. To c
 
 Check the [Nextcloud documentation](https://docs.nextcloud.com/server/15/admin_manual/configuration_server/email_configuration.html) for other values to configure SMTP.
 
+## Overriding config.php parameters
+
+You can also override parameters from the `config.php` file by defining an `NC_` prefixed environment variable. Example:
+- `NC_skeletondirectory`: Overrides `skeletondirectory`, the directory where the skeleton files are located.
+
+Parameter list is available in the [Nextcloud documentation](https://docs.nextcloud.com/server/latest/admin_manual/configuration_server/config_sample_php_parameters.html).
+
 # Running this image with docker-compose
 The easiest way to get a fully featured and functional setup is using a `docker-compose` file. There are too many different possibilities to setup your system, so here are only some examples of what you have to look for.
 
